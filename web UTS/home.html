@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Vava</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="wrapper">
+    <div class="logo"><a href="">My Vava</a></div>
+    <div class="menu">
+      <ul>
+        <li><a href=#home>Home</a></li>
+        <li><a href=#jadwal>jadwal</a></li>
+        <li><a href=#profile>profile</a></li>
+        <li><a href=#tentang>tentang</a></li>
+        <li><a href=#hobi>hobi</a></li>
+        <li><a href=#pendaftaran class="tbl-biru">pendaftaran</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <section id="home">
+      <img src="gambar/home.jpg">
+      <div class="kolom">
+        <p class="deskripsi">Web UTS</p>
+        <h2>Semoga Betah</h2>
+        <p>Ini adalah website UTS Pemograman Web Yang biasa-biasa aja gak ada yang spesial<br>
+        Jangan dipencet tombol di bawah karena gak ada funsinya :v</p>
+        <p> <a href="" class="tbl-pink">Pelajari lebih lanjut</a></p>
+      </div>
+    </section>
+
+    <section id="jadwal">
+       <div class="kolom">
+        <p class="deskripsi">Jadwal Pelajaran</p>
+        <h2>Jadwal Perkuliahan</h2>
+        <h2>Jadwal Kita</h2>
+        <p>Ini adalah Jadwal Pekuliahan Semester Genap</p>
+       </div>
+
+<table>
+  <tr>
+    <th>Hari</th>
+    <th>Jam</th>
+    <th>Mata Kuliah</th>
+    <th>Dosen Pengampu</th>
+    <th>Ruang Kelas</th>
+  </tr>
+  <tr>
+    <td>Senin</td>
+    <td>08:00 - 10:00</td>
+    <td>Pemrograman Web</td>
+    <td>Dr. Ahmad</td>
+    <td>Ruang 101</td>
+  </tr>
+  <tr>
+    <td>Selasa</td>
+    <td>10:00 - 12:00</td>
+    <td>Basis Data</td>
+    <td>Prof. Budi</td>
+    <td>Ruang 102</td>
+  </tr>
+  <tr>
+    <td>Rabu</td>
+    <td>08:00 - 12:00</td>
+    <td>Jaringan komputer</td>
+    <td>Prof. Agus</td>
+    <td>Ruang 102</td>
+  </tr>
+  <tr>
+    <td>Kamis</td>
+    <td>10:00 - 12:00</td>
+    <td>Resiko Manajemen Proyek</td>
+    <td>Prof. Dina</td>
+    <td>Ruang 102</td>
+  </tr>
+  <tr>
+    <td>Jumat</td>
+    <td>09:00 - 11:00</td>
+    <td>Pendidikan Agama</td>
+    <td>Prof. Ahmad</td>
+    <td>Ruang 102</td>
+  </tr>
+</table>
+       <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+      </section>
+      <section id="profile">
+        <div class="wrapper">
+        <div class="kolom">
+             <p class="deskripsi">Tentang Profile saya</p>
+             <h2>Biodata Saya</h2>
+            <p>Biodata saya adalah<br>
+              Nama:Vava Ahsanul Khuluk<br>
+              NIM:233307029<br>
+              Alamat:Brazil <br>
+              Kecamatan:Los Santos<br>
+            </p>
+            <img src="gambar/profile.jpg" alt="Saya 5Tahun Lalu" width="300" height="300">
+            <p>Saya 5 tahun lalu</p>
+          </div>
+      </section>
+      <section id="tentang">
+       <div class="kolom">
+        <h2>Tentang</h2>
+       <p>Tentang Saya Adalah tidak Ada Saya Bukan Orang sempurna<br>
+        nama saya Vava Ahsanul Khuluk<br>
+         Saya adalah seorang mahasiswa semester 2 di Jurusan Teknologi Informasi Politeknik Negeri Madiun<br> 
+      -Vava</p>
+      <img src="gambar/tentang.png" width="250" height="250">
+       </div>
+      </section>
+      <section id="hobi">
+        <div class="kolom">
+         <h2>Hobi</h2>
+        <p>Hobi Saya Meliputi<br>
+          Menonton Pertandingan: Bagi sebagian orang, hobi sepakbola terutama melibatkan menonton pertandingan sepakbola<br>
+           Mereka mungkin menjadi penggemar setia klub atau timnas favorit mereka, dan mereka senang menyaksikan pertandingan baik secara langsung di stadion atau melalui siaran televisi.</p>
+           <img src="gambar/background.jpg " width="1250" height="700">
+        </div>
+       </section>
+       <section id="pendaftaran">
+        <div class="kolom">
+          <div class="deskripsi">
+         <h2>Pendaftaran</h2>
+         <form action="/submit_registration" method="post">
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama" required><br>
+          
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required><br>
+          
+          <label for="alamat">Alamat:</label><br>
+          <textarea id="alamat" name="alamat" required></textarea><br>
+          
+          <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+          <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required>
+          <label for="laki-laki">Laki-laki</label>
+          <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required>
+          <label for="perempuan">Perempuan</label><br>
+          
+          <label for="usia">Usia:</label><br>
+          <input type="number" id="usia" name="usia" required><br>
+          
+          <input type="submit" value="Daftar">
+          <input type="reset" value="Reset">
+      </form>
+        </div>
+       </section>
+  </div>
+</body>
+</html>
